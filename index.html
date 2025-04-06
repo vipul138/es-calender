@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- If multi-language site, reconsider usage of html lang declaration here. -->
+<html lang="en"> 
+
+<head>
+  <meta charset="utf-8">
+  <title>Birthday Calendar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!--font-awesome link for icons-->
+  <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
+  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+</head>
+
+<body>
+  <!--container start-->
+  <div class="container">
+    <!--header section start-->
+    <header>
+      <div class="wrapper">
+        <h1><a href="index.html" title="Birthday Calendar">Birthday Cal</a></h1>
+      </div>
+    </header>
+    <!--header section start-->
+    <!--main section start-->
+    <main>
+      <!-- week-days section starts -->
+      <section class="week-days">
+        <div class="wrapper">
+          <ul class="days">
+            <li>
+              <h3>mon</h3>
+              <ul class="mon"></ul>
+              <h4 class="count"></h4>
+            </li>
+            <li>
+              <h3>tue</h3>
+              <ul class="tue"></ul>
+              <h4 class="count"></h4>
+            </li>
+            <li>
+              <h3>wed</h3>
+              <ul class="wed"></ul>
+              <h4 class="count"></h4>
+            </li>
+            <li>
+              <h3>thu</h3>
+              <ul class="thu"></ul>
+              <h4 class="count"></h4>
+            </li>
+            <li>
+              <h3>fri</h3>
+              <ul class="fri"></ul>
+              <h4 class="count"></h4>
+            </li>
+            <li>
+              <h3>sat</h3>
+              <ul class="sat"></ul>
+              <h4 class="count"></h4>
+            </li>
+            <li>
+              <h3>sun</h3>
+              <ul class="sun"></ul>
+              <h4 class="count"></h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- week-days section starts -->
+      <!-- get-year section starts -->
+      <section class="get-year">
+        <div class="wrapper">
+          <textarea></textarea>
+          <form>
+            <div class="form-group">
+              <label for="year">Enter the Year :</label>
+              <input type="text" id="year" placeholder="Eg. 2021" maxlength="4">
+              <span class="error">This field is required!</span>
+            </div>
+            <div class="form-control">
+              <button class="submit">submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- get-year section ends -->
+    </main>
+    <!--main section end-->
+
+    <!--footer section start-->
+    <footer>      
+
+    </footer>
+    <!--footer section end-->
+
+  </div>
+  <!--container end-->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
