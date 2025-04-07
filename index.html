@@ -73,7 +73,36 @@
       <!-- get-year section starts -->
       <section class="get-year">
         <div class="wrapper">
-          <textarea></textarea>
+          <div class="user-form">
+            <table class="user-table">
+              <thead>
+              <tr>
+                <th>Sr. No</th>
+                <th>Name</th>
+                <th>Birthday</th>
+              </tr>
+              </thead>
+              <tbody>
+              <!-- Rows will be dynamically added here -->
+              </tbody>
+            </table>
+            <button id="delete-users">Delete</button>
+            <form>
+              <div class="form-group">
+                <label for="name">Enter Name:</label>
+                <input type="text" id="name" placeholder="Eg. John Doe" maxlength="50">
+                <span class="error">This field is required!</span>
+              </div>
+              <div class="form-group">
+                <label for="birthdate">Enter Birthdate:</label>
+                <input type="date" id="birthdate">
+                <span class="error">This field is required!</span>
+              </div>
+              <div class="form-control">
+                <button id="submit">Add</button>
+              </div>
+            </form>
+          </div>
           <form>
             <div class="form-group">
               <label for="year">Enter the Year :</label>
